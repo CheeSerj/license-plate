@@ -1,27 +1,27 @@
 # LicensePlate
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.11.
+Эта библиотека `Angular` предназначена для обработки и отрисовки государственных номеров автомобилей. Она принимает строку с гос номером в качестве входного параметра и отображает его в формате, соответствующем стандартам.
 
-## Development server
+## Установка
+Для начала необходимо установить библиотеку в ваш проект Angular. Используйте следующую команду `npm`:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+`npm install lib-license-plate`
 
-## Code scaffolding
+## Использование
+После установки библиотеки, вы можете использовать компонент lib-license-plate в вашем проекте. Ниже приведен пример использования компонента в шаблоне Angular.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`<lib-license-plate [licensePlate]="'А123АА45'"></lib-license-plate>`
 
-## Build
+## Импортирование модуля
+Для того чтобы использовать компонент в вашем проекте, необходимо импортировать модуль библиотеки в ваш главный модуль (или в тот модуль, где вы планируете использовать компонент).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+`imports: [LibLicensePlateModule],`
 
-## Running unit tests
+## Настройка
+Библиотека может быть настроена в зависимости от ваших требований. Пока настройки по умолчанию подходят для большинства случаев использования.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Лицензия
+Эта библиотека распространяется под лицензией MIT.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Заключение
+Спасибо за использование библиотеки! Надеюсь, что она окажется полезной в ваших проектах.
