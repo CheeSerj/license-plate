@@ -1,0 +1,19 @@
+{
+  "name": "ng-license-plate-ru",
+  "version": "0.0.5",
+  "author": "CheeSerj",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CheeSerj/license-plate.git"
+  },
+  "peerDependencies": {
+    "@angular/common": "^13.3.0",
+    "@angular/core": "^13.3.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "ng-packagr": "^13.3.0"
+  }
+}

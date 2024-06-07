@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="license-plate">
+    <div class="number">
+      <span class="prefix"> {{ licensePlate.slice(0, 1)  }} </span>
+      <span class="digits"> {{ licensePlate.slice(1, 4) }} </span>
+      <span class="suffix"> {{ licensePlate.slice(4, 6) }} </span>
+    </div>
+
+    <div class="region">
+      <div class="region-number">{{ licensePlate.slice(6) }}</div>
+      <div class="country">
+        <div class="country-code">RUS</div>
+        <div class="flag">
+          <div class="flag-bar white"></div>
+          <div class="flag-bar blue"></div>
+          <div class="flag-bar red"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'number';
+  src: url('./src/lib/assets/RoadNumbers2.0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'number', 'arial', sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+.license-plate {
+  display: flex;
+  justify-content: space-between;
+  border: 5px solid black;
+  border-radius: 12px;
+  position: relative;
+  width: 290px;
+  height: 68px;
+  background: white;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  font-size: 58px;
+  font-family: 'number', sans-serif;
+}
+
+.prefix, .digits, .suffix {
+  margin: 0 5px;
+}
+
+.prefix, .suffix {
+  font-size: 40px;
+  font-family: 'number', sans-serif;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.region {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  border-left: 3px solid black;
+  align-items: start;
+  justify-content: start;
+  padding-left: 8px;
+}
+
+.region-number {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.country {
+  display: flex;
+  align-items: center;
+}
+
+.country-code {
+  font-size: 12px;
+  margin-right: 5px;
+  font-family: "arial", sans-serif;
+  font-weight: 700;
+}
+
+.flag {
+  display: flex;
+  flex-direction: column;
+  width: 20px;
+  height: 15px;
+  border: 1px solid black;
+}
+
+.flag-bar {
+  height: 5px;
+}
+
+.flag-bar.white {
+  background-color: white;
+}
+
+.flag-bar.blue {
+  background-color: blue;
+}
+
+.flag-bar.red {
+  background-color: red;
+}

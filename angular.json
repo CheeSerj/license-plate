@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "license-plate": {
+      "projectType": "library",
+      "root": "projects/license-plate",
+      "sourceRoot": "projects/license-plate/src",
+      "prefix": "ng",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/license-plate/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/license-plate/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/license-plate/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/license-plate/src/test.ts",
+            "tsConfig": "projects/license-plate/tsconfig.spec.json",
+            "karmaConfig": "projects/license-plate/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "license-plate"
 }
