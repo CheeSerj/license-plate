@@ -1,11 +1,12 @@
 {
   "name": "ng-license-plate-ru",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "author": "CheeSerj",
   "repository": {
     "type": "git",
     "url": "https://github.com/CheeSerj/license-plate.git"
   },
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^13.3.0",
     "@angular/core": "^13.3.0"
@@ -15,5 +16,16 @@
   },
   "devDependencies": {
     "ng-packagr": "^13.3.0"
-  }
+  },
+  "keywords": [
+    "angular",
+    "license-plate",
+    "vehicle",
+    "car",
+    "number-plate",
+    "library",
+    "gov-number",
+    "number",
+    "гос номер"
+  ]
 }

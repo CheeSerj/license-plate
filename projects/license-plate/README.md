@@ -1,24 +1,27 @@
 # LicensePlate
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+Эта библиотека `Angular` предназначена для обработки и отрисовки государственных номеров автомобилей. Она принимает строку с гос номером в качестве входного параметра и отображает его в формате, соответствующем стандартам.
 
-## Code scaffolding
+## Установка
+Для начала необходимо установить библиотеку в ваш проект Angular. Используйте следующую команду `npm`:
 
-Run `ng generate component component-name --project license-plate` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project license-plate`.
-> Note: Don't forget to add `--project license-plate` or else it will be added to the default project in your `angular.json` file. 
+`npm install lib-license-plate`
 
-## Build
+## Использование
+После установки библиотеки, вы можете использовать компонент lib-license-plate в вашем проекте. Ниже приведен пример использования компонента в шаблоне Angular.
 
-Run `ng build license-plate` to build the project. The build artifacts will be stored in the `dist/` directory.
+`<lib-license-plate [licensePlate]="'А123АА45'"></lib-license-plate>`
 
-## Publishing
+## Импортирование модуля
+Для того чтобы использовать компонент в вашем проекте, необходимо импортировать модуль библиотеки в ваш главный модуль (или в тот модуль, где вы планируете использовать компонент).
 
-After building your library with `ng build license-plate`, go to the dist folder `cd dist/license-plate` and run `npm publish`.
+`imports: [LibLicensePlateModule],`
 
-## Running unit tests
+## Настройка
+Библиотека может быть настроена в зависимости от ваших требований. Пока настройки по умолчанию подходят для большинства случаев использования.
 
-Run `ng test license-plate` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Лицензия
+Эта библиотека распространяется под лицензией MIT.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Заключение
+Спасибо за использование библиотеки! Надеюсь, что она окажется полезной в ваших проектах.
